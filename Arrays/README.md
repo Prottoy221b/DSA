@@ -19,7 +19,7 @@ Space Complexity:O(1)
 ------------------------------------------------
 
 
-Problem:RSingle Number
+Problem:Single Number
 Link:https://leetcode.com/problems/single-number/description/
 Approach:
 Use XOR properties.
@@ -37,6 +37,26 @@ Link:https://leetcode.com/problems/remove-duplicates-from-sorted-array/descripti
 Approach:
 Because the array is sorted, duplicates are adjacent.
 Maintain a write index for the next unique value while scanning with a read index.
+
+Time Complexity:O(n)
+Space Complexity:O(1)
+
+-------------------------------------------------
+
+Problem:Best Time to Buy and Sell Stock
+Link:https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/?envType=problem-list-v2&envId=array
+Approach:
+Traverse the prices once while tracking:
+
+the minimum price so far (best day to buy),
+
+the maximum profit achievable if selling today.
+
+For each price, compute
+profit = current price − min so far,
+update the answer, then refresh the minimum.
+
+This ensures the buy always happens before the sell and every selling day is considered.
 
 Time Complexity:O(n)
 Space Complexity:O(1)
