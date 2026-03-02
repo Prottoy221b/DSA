@@ -73,3 +73,13 @@ Keep updating the global maximum during traversal and return it.
 
 Time Complexity:O(n)    
 Space Complexity:O(1)   
+
+
+Problem: Two sum           
+link:https://leetcode.com/problems/two-sum/           
+Approach:         
+Traverse the array once while storing each number and its index in an unordered_map (value → index).      
+For every element, compute its complement (target - nums[i]) and check in O(1) time if it already exists in the map; if yes, return the two indices.      
+
+Time Complexity:O(n)          
+Space Complexity:O(n) 
