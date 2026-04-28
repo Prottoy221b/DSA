@@ -74,6 +74,8 @@ Keep updating the global maximum during traversal and return it.
 Time Complexity:O(n)    
 Space Complexity:O(1)   
 
+------------------------------------------------ 
+
 
 Problem: Two sum           
 link:https://leetcode.com/problems/two-sum/           
@@ -83,3 +85,16 @@ For every element, compute its complement (target - nums[i]) and check in O(1) t
 
 Time Complexity:O(n)          
 Space Complexity:O(n) 
+
+------------------------------------------------    
+
+Problem:Merge Two Array     
+Link:https://leetcode.com/problems/merge-sorted-array/description/?envType=problem-list-v2&envId=array             
+Approach:   
+nsert elements of nums2 into nums1 by shifting elements to maintain sorted order (insertion-style brute force)      
+
+Time Complexity:O((n + m)²)    
+Space Complexity:O(1)   
+
+
+
